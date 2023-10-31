@@ -1,0 +1,176 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Sketch&display=swap');
+
+body {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: white;
+    color: rgb(13, 39, 71);
+}
+
+/* Heading */
+.heading {
+    font-family: 'Londrina Sketch', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.h1-rock {
+    color: mediumslateblue;
+}
+
+.h1-paper {
+    color: mediumseagreen;
+}
+
+.h1-scissors {
+    color: mediumorchid;
+}
+
+/* Instruction Icons */
+.instructions{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 5px;
+    margin-top: 0;
+}
+
+.fa-hand-back-fist {
+    color: mediumslateblue;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fa-hand {
+    color: mediumseagreen;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fa-hand-scissors {
+    color: mediumorchid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* h2 options */
+h2 {
+    padding: 100px 0 0 0;
+    font-size: 30px;
+}
+
+#options-text {
+    margin-bottom: 0;
+    padding-bottom: 12px;
+}
+
+/* h3 first to 10 wins */
+
+#first-to-text {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* h3 player & computer score */
+h3 {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+/* Game container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+/* Game section */
+
+.game-section {
+    display: inline-flexbox;
+    width: fit-content;
+    height: 100px;
+    max-height: 100px;
+    max-width: 120px;
+    padding: 3%;
+}
+
+/* Player & computer move output */
+
+.output {
+    display: flex;
+    flex-direction: column;
+    background: rgb(45, 142, 177);
+    border: 1px solid;
+    box-shadow: 0 0 3px 0 rgba(23, 75, 96, 0.533);
+}
+
+/* Player & computer score span */
+.output > span {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(227, 227, 227, 0.815);
+    padding-bottom: 5px;
+}
+
+/* Player & computer icons */
+
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 15px 15px 15px 15px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    background : rgb(36, 116, 145);
+    box-shadow: 0 3px 3px 0 rgba(23, 75, 96, 0.533);
+}
+
+.show i {
+    font-size: 100px;
+    color: rgb(13, 39, 71);
+}
+
+/* Options buttons */
+
+.options {
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.options button {
+    padding: 15px;
+    margin: 0 15px;
+    border-radius: 50%;
+    border: 1px solid;
+    cursor: pointer;
+    background: rgb(36, 116, 145);
+    font-size: 35px;
+    color: rgb(13, 39, 71);
+    box-shadow: 0 4px 4px 0 rgba(23, 75, 96, 0.393);
+}
+
+.options button:hover {
+    background: rgb(50, 157, 196);
+}
+/* Rock button */
+#rock {
+    padding: 15px 17.19px 15px 17.19px;
+}
