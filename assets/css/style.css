@@ -35,7 +35,7 @@ body {
 }
 
 /* Instruction Icons */
-.instructions{
+.instructions {
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
@@ -73,7 +73,6 @@ h2 {
 }
 
 /* h3 first to 10 wins */
-
 #first-to-text {
     margin: 0;
     padding: 0;
@@ -88,7 +87,6 @@ h3 {
 }
 
 /* Game container */
-
 .container {
     display: flex;
     justify-content: center;
@@ -96,7 +94,6 @@ h3 {
 }
 
 /* Game section */
-
 .game-section {
     display: inline-flexbox;
     width: fit-content;
@@ -107,7 +104,6 @@ h3 {
 }
 
 /* Player & computer move output */
-
 .output {
     display: flex;
     flex-direction: column;
@@ -174,3 +170,135 @@ h3 {
 #rock {
     padding: 15px 17.19px 15px 17.19px;
 }
+
+/* Media query: tablets and larger (712px and up) */
+@media screen and (min-width: 712px) {
+    /* Heading */
+    .heading {
+        font-size: 80px;
+    }
+    /* Instruction Icons */
+    .instructions {
+        font-size: 30px;
+    }
+    /* h2 options */
+    h2 {
+        font-size: 60px;
+    }
+    /* h3 first to 10 wins */
+    #first-to-text {
+       font-size: 40px;
+    }
+
+    /* h3 player & computer score */
+    h3 {
+        font-size: 30px;
+    }
+    /* Game container */
+    .container {
+        margin: 60px 0 60px 0;
+    }
+    /* Game section */
+    .game-section {
+        width: 100%;
+        height: 100%;
+        max-height: 200px;
+        max-width: 200px;
+        padding: 5%;
+    }
+    /* Player & computer score span */
+    .output > span {
+        font-size: 27px;
+    }
+    /* Player & computer icons */
+    .show i {
+        font-size: 150px;
+    }
+    /* Options buttons */
+    .options button {
+       font-size: 55px;
+    }
+}
+
+/* Media query: large devices (landscape, 1024px and up) */
+@media screen and (min-width: 1024px) {
+   /* Heading */
+   .heading {
+        font-size: 70px;
+    }
+    /* Instruction Icons */
+    .instructions {
+        font-size: 25px;
+    }
+    /* h2 options */
+    h2 {
+        font-size: 40px;
+    }
+
+    #options-text {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    /* h3 first to 10 wins */
+    #first-to-text {
+        font-size: 25px;
+     }
+    /* Game container */
+    .container {
+        margin-top: 0;
+        padding: 0;
+    }
+    /* Game section */
+    .game-section {
+        max-height: 150px;
+        max-width: 150px;
+        padding: 3%;
+    }
+    /* Player & computer icons */
+    .show i {
+        font-size: 85px;
+    }
+    /* Options buttons */
+    .options button {
+       font-size: 30px;
+    }
+}
+
+/* Media query: large devices (1024px and up) */
+@media screen and (min-width: 1024px) {
+    /* Heading */
+    .heading {
+         font-size: 100px;
+     }
+     /* Instruction Icons */
+     .instructions {
+         font-size: 45px;
+     }
+     /* h2 options */
+     h2 {
+         font-size: 80px;
+     }
+     /* h3 first to 10 wins */
+     #first-to-text {
+        padding-top: 15px;
+         font-size: 50px;
+      }
+     /* Game container */
+     .container {
+        margin: 100px 0 180px 0;
+     }
+     /* Game section */
+     .game-section {
+         max-height: 250px;
+         max-width: 250px;
+         padding: 5%;
+     }
+     /* Player & computer icons */
+     .show i {
+         font-size: 200px;
+     }
+     /* Options buttons */
+     .options button {
+        font-size: 80px;
+     }
+ }
