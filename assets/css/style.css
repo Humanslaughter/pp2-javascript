@@ -171,6 +171,11 @@ h3 {
     padding: 15px 17.19px 15px 17.19px;
 }
 
+/* Restart button */
+/* #restart {
+    
+} */
+
 /* Media query: tablets and larger (712px and up) */
 @media screen and (min-width: 712px) {
     /* Heading */
