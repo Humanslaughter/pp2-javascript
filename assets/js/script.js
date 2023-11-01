@@ -2,7 +2,7 @@ const game = () => {
     let playerScore = 0;
     let computerScore = 0;
 
-    const btns = document.querySelectorAll('.options button');
+    const buttons = document.querySelectorAll('.options button');
     const showIconMove = document.querySelector('.show i');
     const computerShowIconMove = document.querySelector('.computer i');
     const pScore = document.getElementById('p-score');
@@ -14,10 +14,10 @@ const game = () => {
     const checkScore = () => {
         if (playerScore === 10 || computerScore === 10) {
             if (playerScore === 10) {
-                firstToText.innerHTML = 'Player wins the game!';
+                firstToText.innerHTML = 'Player won the game!';
                 firstToText.style.color = 'green';
             } else {
-                firstToText.innerHTML = 'Computer wins the game!';
+                firstToText.innerHTML = 'Computer won the game!';
                 firstToText.style.color = 'red';
             }
             playerScore = 0;
@@ -28,7 +28,7 @@ const game = () => {
     };
 
     const startGame = () => {
-        btns.forEach(btn => {
+        buttons.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 let clickedBtn = e.target.className;
                 showIconMove.className = clickedBtn;
@@ -38,7 +38,7 @@ const game = () => {
                 if (showIconMove.className === computerShowIconMove.className) {
                     pScore.innerHTML = playerScore;
                     cScore.innerHTML = computerScore;
-                    firstToText.innerHTML = 'Tie';
+                    firstToText.innerHTML = 'Tie!';
                     firstToText.style.color = 'goldenrod';
                 } else if (showIconMove.className === computerOptions[0] && computerShowIconMove.className === computerOptions[2]) {
                     playerScore++;
