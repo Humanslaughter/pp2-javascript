@@ -16,7 +16,7 @@ body {
     font-family: 'Londrina Sketch', cursive;
     text-transform: uppercase;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -39,9 +39,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
-    padding-top: 5px;
     padding-bottom: 10px;
-    margin-top: 0;
 }
 
 .fa-hand-back-fist {
@@ -64,18 +62,16 @@ body {
 
 /* Scoreboard */
 .scoreboard-section {
-    display: inline-flexbox;
     width: 200px;
     height: 100px;
     max-height: 100px;
-    max-width: 100%;
-    margin: 0 auto;
-    border: 1px solid rgba(23, 75, 96, 0.500);
+    max-width: 200px;
+    margin: auto;
 }
 
 /* h2 */
 #scoreboard {
-    margin: 0 auto;
+    margin: auto;
     font-size: 20px;
     text-align: center;
     background: rgba(45, 142, 177, 0.550);
@@ -103,8 +99,6 @@ body {
 
 /* h3 first to 10 wins */
 #first-to-text {
-    margin: 0;
-    padding: 0;
     font-size: 20px;
 }
 
@@ -132,9 +126,6 @@ body {
     display: flex;
     flex-direction: column;
     background: rgba(45, 142, 177, 0.550);
-    border-left: 1px solid rgba(23, 75, 96, 0.500);
-    border-right: 1px solid rgba(23, 75, 96, 0.500);
-    border-top: 1px solid rgba(23, 75, 96, 0.500);
     box-shadow: 0 0 3px 0 rgba(23, 75, 96, 0.550);
 }
 
@@ -155,9 +146,6 @@ body {
     text-align: center;
     align-content: center;
     padding: 15px 15px 15px 15px;
-    border-left: 1px solid rgba(23, 75, 96, 0.500);
-    border-right: 1px solid rgba(23, 75, 96, 0.500);
-    border-bottom: 1px solid rgba(23, 75, 96, 0.500);
     background : rgba(36, 116, 145, 0.550);
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.400);
 }
@@ -185,12 +173,11 @@ body {
     padding: 15px;
     margin: 0 15px;
     border-radius: 50%;
-    border: 1px solid;
     cursor: pointer;
     background: rgba(30, 101, 127, 0.55);
     font-size: 18px;
     color: #3a3a3a;
-    border: 1px solid rgba(23, 75, 96, 0.500);
+    border: none;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.400);
 }
 
@@ -209,22 +196,13 @@ body {
     .heading {
         font-size: 30px;
     }
-    /* Instruction Icons */
-    .instructions {
-        font-size: 15px;
-    }
-    /* h2 options */
-    /* h2 {
-        font-size: 30px;
-    } */
     /* h3 first to 10 wins */
     #first-to-text {
-       font-size: 20px;
-       padding-bottom: 0;
+       padding: 0;
     }
     /* Game container */
     .container {
-        padding: 10px 0 45px 0;
+        padding: 10px 0 20px 0;
     }
     /* Game section */
     .game-section {
@@ -240,11 +218,11 @@ body {
     }
     /* Player & computer icons */
     .show i {
-        font-size: 80px;
+        font-size: 50px;
     }
     /* Options buttons */
     #options-text {
-        margin: 0;
+        padding: 0;
     }
 
     .options button {
@@ -266,22 +244,13 @@ body {
     .instructions {
         font-size: 30px;
     }
-    /* h2 options */
-    h2 {
-        font-size: 60px;
-    }
     /* h3 first to 10 wins */
     #first-to-text {
        font-size: 40px;
     }
-
-    /* h3 player & computer score */
-    h3 {
-        font-size: 30px;
-    }
     /* Game container */
     .container {
-        margin: 60px 0 60px 0;
+        padding: 50px 0 50px 0;
     }
     /* Game section */
     .game-section {
@@ -289,7 +258,7 @@ body {
         height: 100%;
         max-height: 200px;
         max-width: 200px;
-        padding: 5%;
+        padding: 3%;
     }
     /* Player & computer score span */
     .output > span {
@@ -297,7 +266,7 @@ body {
     }
     /* Player & computer icons */
     .show i {
-        font-size: 150px;
+        font-size: 80px;
     }
     /* Options buttons */
     .options button {
@@ -308,33 +277,36 @@ body {
         width: 300px;
         max-height: 100px;
     }
+    #options-text {
+        font-size: 50px;
+        padding-top: 70px;
+    }
 }
 
 /* Media query: large devices (landscape, 1024px and up) */
 @media screen and (min-width: 1024px) {
    /* Heading */
    .heading {
-        font-size: 70px;
+        font-size: 50px;
     }
     /* Instruction Icons */
     .instructions {
-        font-size: 25px;
+        font-size: 15px;
     }
     #options-text {
-        margin-top: 0;
-        padding-top: 15px;
         padding-bottom: 5px;
+        font-size: 30px;
+        padding-top: 0;
     }
     /* h3 first to 10 wins */
     #first-to-text {
         font-size: 25px;
-        padding-top: 12px;
+        padding-bottom: 0;
      }
     /* Game container */
     .container {
-        margin: 0;
-        padding-bottom: 15px;
         padding-top: 0;
+        padding-bottom: 0;
     }
     /* Game section */
     .game-section {
@@ -344,11 +316,15 @@ body {
     }
     /* Player & computer icons */
     .show i {
-        font-size: 70px;
+        font-size: 50px;
+    }
+    /* Player & computer score span */
+    .output > span {
+        font-size: 15px;
     }
     /* Options buttons */
     .options button {
-       font-size: 18px;
+       font-size: 15px;
     }
     /* Scoreboard */
     .scoreboard-section {
@@ -361,11 +337,11 @@ body {
 @media screen and (min-width: 1280px) {
     /* Heading */
     .heading {
-         font-size: 100px;
+         font-size: 50px;
      }
      /* Instruction Icons */
      .instructions {
-         font-size: 45px;
+         font-size: 20px;
      }
      /* h3 first to 10 wins */
      #first-to-text {
@@ -374,7 +350,7 @@ body {
       }
      /* Game container */
      .container {
-        padding: 0 0 60px 0;
+        padding: 20px 0 60px 0;
      }
      /* Game section */
      .game-section {
@@ -384,7 +360,7 @@ body {
      }
      /* Player & computer icons */
      .show i {
-         font-size: 100px;
+         font-size: 80px;
      }
      /* Options buttons */
      .options button {
@@ -400,13 +376,8 @@ body {
     }
     /* Scoreboard */
     .scoreboard-section {
-        width: 2500px;
+        width: 250px;
         max-width: 250px;
         max-height: 100px;
-    }
-    /* Scoreboard h2 */
-    #scoreboard {
-        padding: 0;
-        margin: 0;
     }
  }

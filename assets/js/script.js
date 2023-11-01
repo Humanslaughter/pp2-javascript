@@ -68,6 +68,7 @@ const game = () => {
                 // Tie
                 if (showIconMove.className === computerShowIconMove.className) {
                     firstToText.innerHTML = 'Tie!';
+                    firstToText.style.fontSize = '25px';
                     firstToText.style.color = 'goldenrod';
                 } 
                 // If not a tie
