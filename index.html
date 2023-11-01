@@ -31,33 +31,47 @@
     </header>
 
     <main>
-        <h2 id="first-to-text">First to 10 wins</h2>
-        <div class="container">
-            <div class="game-section">
-                <div class="output">
-                    <h3>Player</h3><span id="p-score">0</span>
+
+        <section class="scoreboard-section">
+            <h2 id="scoreboard">Scoreboard</h2>
+            <div class="scoreboard">
+                <p>Player:<span id="p-scoreboard">0</span></p>
+                <p>Computer:<span id="c-scoreboard">0</span></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="game-section">
+                    <div class="output">
+                        <span id="p-score">0</span>
+                    </div>
+                    <div class="show">
+                        <i class="fa-regular fa-hand-back-fist"></i>
+                    </div>
                 </div>
-                <div class="show">
-                    <i class="fa-regular fa-hand-back-fist"></i>
+
+                <div class="game-section">
+                    <div class="output">
+                        <span id="c-score">0</span>
+                    </div>
+                    <div class="show computer">
+                        <i class="fa-regular fa-hand-scissors"></i>
+                    </div>
                 </div>
             </div>
+            <h2 id="first-to-text">First to 10 wins</h2>
+        </section>
 
-            <div class="game-section">
-                <div class="output">
-                    <h3>Computer</h3><span id="c-score">0</span>
-                </div>
-                <div class="show computer">
-                    <i class="fa-regular fa-hand-scissors"></i>
-                </div>
+        <section>
+            <h2 id="options-text">What's your move?</h2>
+            <div class="options">
+                <button class="fa-regular fa-hand-back-fist" id="rock"></button>
+                <button class="fa-regular fa-hand" id="paper"></button>
+                <button class="fa-regular fa-hand-scissors" id="scissors"></button>
             </div>
-        </div>
+        </section>
 
-        <h2 id="options-text">What's your move?</h2>
-        <div class="options">
-            <button class="fa-regular fa-hand-back-fist" id="rock"></button>
-            <button class="fa-regular fa-hand" id="paper"></button>
-            <button class="fa-regular fa-hand-scissors" id="scissors"></button>
-        </div>
     </main>
 
     <!-- Font Awesome -->
