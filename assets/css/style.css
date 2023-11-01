@@ -269,8 +269,8 @@ h3 {
     }
 }
 
-/* Media query: large devices (1024px and up) */
-@media screen and (min-width: 1024px) {
+/* Media query: large devices (1280px and up) */
+@media screen and (min-width: 1280px) {
     /* Heading */
     .heading {
          font-size: 100px;
@@ -281,29 +281,29 @@ h3 {
      }
      /* h2 options */
      h2 {
-         font-size: 80px;
+         font-size: 50px;
+         padding-top: 50px;
      }
      /* h3 first to 10 wins */
      #first-to-text {
-        padding-top: 15px;
-         font-size: 50px;
+         font-size: 40px;
       }
      /* Game container */
      .container {
-        margin: 100px 0 180px 0;
+        margin: 0 0 60px 0;
      }
      /* Game section */
      .game-section {
-         max-height: 250px;
-         max-width: 250px;
+         max-height: 150px;
+         max-width: 200px;
          padding: 5%;
      }
      /* Player & computer icons */
      .show i {
-         font-size: 200px;
+         font-size: 150px;
      }
      /* Options buttons */
      .options button {
-        font-size: 80px;
+        font-size: 50px;
      }
  }
