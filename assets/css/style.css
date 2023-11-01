@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Sketch&display=swap');
 
 body {
+    display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -106,7 +107,6 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 30px 0 50px 0;
 }
 
@@ -122,7 +122,6 @@ body {
 
 /* Player & computer move output */
 .output {
-    display: flex;
     flex-direction: column;
     background: rgba(45, 142, 177, 0.550);
     box-shadow: 0 0 3px 0 rgba(23, 75, 96, 0.550);
