@@ -27,6 +27,20 @@ const game = () => {
         }
     };
 
+    const updateScoreDisplay = () => {
+        pScore.innerHTML = playerScore;
+        cScore.innerHTML = computerScore;
+    };
+
+    const incrementScore = (ScoreType) => {
+        if (ScoreType === 'player') {
+            playerScore++;
+        } else if (ScoreType === 'computer') {
+            computerScore++;
+        }
+        updateScoreDisplay();
+    };
+
     const startGame = () => {
         buttons.forEach(btn => {
             btn.addEventListener('click', (e) => {
@@ -36,40 +50,20 @@ const game = () => {
                 computerShowIconMove.className = computerOptions[computerChoice];
 
                 if (showIconMove.className === computerShowIconMove.className) {
-                    pScore.innerHTML = playerScore;
-                    cScore.innerHTML = computerScore;
                     firstToText.innerHTML = 'Tie!';
                     firstToText.style.color = 'goldenrod';
-                } else if (showIconMove.className === computerOptions[0] && computerShowIconMove.className === computerOptions[2]) {
-                    playerScore++;
-                    pScore.innerHTML = playerScore;
-                    firstToText.innerHTML = 'Player wins';
+                } else if (
+                    (showIconMove.className === computerOptions[0] && computerShowIconMove.className === computerOptions[2]) ||
+                    (showIconMove.className === computerOptions[1] && computerShowIconMove.className === computerOptions[0]) ||
+                    (showIconMove.className === computerOptions[2] && computerShowIconMove.className === computerOptions[1])
+                ) {
+                    incrementScore('player');
+                    firstToText.innerHTML = 'Player won';
                     firstToText.style.color = 'green';
-                } else if (showIconMove.className === computerOptions[0] && computerShowIconMove.className === computerOptions[1]) {
-                    computerScore++;
-                    cScore.innerHTML = computerScore;
-                    firstToText.innerHTML = 'Computer wins';
+                } else {
+                    incrementScore('computer');
+                    firstToText.innerHTML = 'Computer won';
                     firstToText.style.color = 'red';
-                } else if (showIconMove.className === computerOptions[1] && computerShowIconMove.className === computerOptions[2]) {
-                    computerScore++;
-                    cScore.innerHTML = computerScore;
-                    firstToText.innerHTML = 'Computer wins';
-                    firstToText.style.color = 'red';
-                } else if (showIconMove.className === computerOptions[1] && computerShowIconMove.className === computerOptions[0]) {
-                    playerScore++;
-                    pScore.innerHTML = playerScore;
-                    firstToText.innerHTML = 'Player wins';
-                    firstToText.style.color = 'green';
-                } else if (showIconMove.className === computerOptions[2] && computerShowIconMove.className === computerOptions[0]) {
-                    computerScore++;
-                    cScore.innerHTML = computerScore;
-                    firstToText.innerHTML = 'Computer wins';
-                    firstToText.style.color = 'red';
-                } else if (showIconMove.className === computerOptions[2] && computerShowIconMove.className === computerOptions[1]) {
-                    playerScore++;
-                    pScore.innerHTML = playerScore;
-                    firstToText.innerHTML = 'Player wins';
-                    firstToText.style.color = 'green';
                 }
 
                 checkScore();
