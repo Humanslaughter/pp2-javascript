@@ -1,12 +1,16 @@
 const game = () => {
     let playerScore = 0;
     let computerScore = 0;
+    let playerScoreboard = 0;
+    let computerScoreboard = 0;
 
     const buttons = document.querySelectorAll('.options button');
     const showIconMove = document.querySelector('.show i');
     const computerShowIconMove = document.querySelector('.computer i');
     const pScore = document.getElementById('p-score');
     const cScore = document.getElementById('c-score');
+    const pScoreboard = document.getElementById('p-scoreboard');
+    const cScoreboard = document.getElementById('c-scoreboard');
 
     const computerOptions = ['fa-regular fa-hand-back-fist', 'fa-regular fa-hand', 'fa-regular fa-hand-scissors'];
     const firstToText = document.getElementById('first-to-text');
@@ -30,13 +34,24 @@ const game = () => {
     const updateScoreDisplay = () => {
         pScore.innerHTML = playerScore;
         cScore.innerHTML = computerScore;
+        pScoreboard.innerHTML = playerScoreboard;
+        cScoreboard.innerHTML = computerScoreboard;
     };
 
     const incrementScore = (ScoreType) => {
+        if (playerScore >= 10 || computerScore >= 10) {
+            return;
+        }
+
         if (ScoreType === 'player') {
             playerScore++;
         } else if (ScoreType === 'computer') {
             computerScore++;
+        }
+        if (playerScore === 10) {
+            playerScoreboard++;
+        } else if (computerScore === 10) {
+            computerScoreboard++;
         }
         updateScoreDisplay();
     };
