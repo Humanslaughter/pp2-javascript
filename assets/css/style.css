@@ -112,7 +112,7 @@ body {
 
 /* Game section */
 .game-section {
-    display: inline-flexbox;
+    display: flexbox;
     width: 100px;
     height: 100px;
     max-height: 100px;
@@ -157,7 +157,7 @@ body {
 
 /* Options buttons */
 .options {
-    display: inline-flexbox;
+    display: flexbox;
     flex-direction: column;
     align-items: center;
 }
