@@ -22,9 +22,11 @@ const game = () => {
             if (playerScore === 10) {
                 firstToText.innerHTML = 'Player won the game!';
                 firstToText.style.color = 'green';
+                firstToText.style.fontSize = firstToText;
             } else {
                 firstToText.innerHTML = 'Computer won the game!';
                 firstToText.style.color = 'red';
+                firstToText.style.fontSize = firstToText;
             }
             playerScore = 0;
             computerScore = 0;
@@ -68,8 +70,8 @@ const game = () => {
                 // Tie
                 if (showIconMove.className === computerShowIconMove.className) {
                     firstToText.innerHTML = 'Tie!';
-                    firstToText.style.fontSize = '25px';
                     firstToText.style.color = 'goldenrod';
+                    firstToText.style.fontSize = firstToText;
                 } 
                 // If not a tie
                 else if (
@@ -80,10 +82,12 @@ const game = () => {
                     incrementScore('player');
                     firstToText.innerHTML = 'Player won';
                     firstToText.style.color = 'green';
+                    firstToText.style.fontSize = firstToText;
                 } else {
                     incrementScore('computer');
                     firstToText.innerHTML = 'Computer won';
                     firstToText.style.color = 'red';
+                    firstToText.style.fontSize = firstToText;
                 }
                 // Check scores
                 checkScore();

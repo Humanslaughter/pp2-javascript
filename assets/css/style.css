@@ -18,9 +18,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .h1-rock {
@@ -39,7 +38,7 @@ body {
 .instructions {
     text-align: center;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
     padding-bottom: 10px;
 }
 
@@ -192,6 +191,13 @@ body {
     /* Heading */
     .heading {
         font-size: 30px;
+    }
+    /* Instruction Icons */
+    .instructions {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-bottom: 10px;
     }
     /* h3 first to 10 wins */
     #first-to-text {
